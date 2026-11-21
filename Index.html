@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio profissional dinâmico — desenvolvedor frontend. HTML, CSS, JavaScript e Bootstrap.">
+  <meta name="author" content="Lucas de Castro Mendonça">
+  <title>Lucas de Castro Mendonça — Portfólio Frontend</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <a href="#conteudo" class="visually-hidden-focusable skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top bg-white shadow-sm" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#inicio">
+          Lucas de Castro Mendonça
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarConteudo"
+          aria-controls="navbarConteudo"
+          aria-expanded="false"
+          aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarConteudo">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#areas">Áreas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tendencias">Tendências</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       CONTEÚDO PRINCIPAL
+       ============================================================ -->
+  <main id="conteudo">
+
+    <!-- 1. APRESENTAÇÃO PESSOAL -->
+    <section id="inicio" class="hero-section py-5" aria-labelledby="titulo-inicio">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center g-4">
+          <div class="col-12 col-md-4 col-lg-3">
+            <img
+              src="assets/img/img5.png"
+              alt="Foto de perfil de Lucas de Castro Mendonça"
+              class="rounded-circle img-fluid hero-photo border border-4 border-white shadow"
+              width="180" height="180">
+          </div>
+          <div class="col-12 col-md-8 col-lg-7">
+            <h1 id="titulo-inicio" class="display-5 fw-bold mb-2">
+              Lucas de Castro Mendonça
+            </h1>
+            <p class="lead text-muted mb-4">
+              Tecnico em informática · HTML5, CSS3, JavaScript e Bootstrap
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center">
+              <a href="#projetos" class="btn btn-primary btn-lg px-4">Ver projetos</a>
+              <a href="#contato" class="btn btn-outline-primary btn-lg px-4">Entrar em contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SOBRE -->
+    <section id="sobre" class="py-5" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 id="titulo-sobre" class="fw-bold">Sobre</h2>
+          <p class="text-muted mb-0">Quem sou, o que faço e como trabalho</p>
+        </header>
+
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-7">
+            <p class="mb-3">
+              Técnico em informática em formação, com foco em interfaces
+              responsivas, acessíveis e performáticas. Tenho experiência prática
+              construindo projetos com HTML5 semântico, CSS3 (Flexbox/Grid),
+              JavaScript e Bootstrap 5, sempre atento a boas práticas de
+              acessibilidade (WCAG/ARIA), organização de código e desempenho.
+            </p>
+            <p class="mb-0 text-muted">
+              Busco minha primeira oportunidade profissional na área, com
+              interesse especial em produtos que valorizam experiência do
+              usuário, código limpo e evolução contínua. Gosto de trabalhar em
+              equipe, documentar decisões e aprender com revisões de código.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-5">
+            <h3 class="h6 text-uppercase text-muted mb-2">Hard skills</h3>
+            <div class="d-flex flex-wrap gap-2 mb-4" aria-label="Hard skills">
+              <span class="badge bg-primary-subtle text-primary-emphasis">HTML5</span>
+              <span class="badge bg-primary-subtle text-primary-emphasis">CSS3</span>
+              <span class="badge bg-primary-subtle text-primary-emphasis">JavaScript (ES6+)</span>
+              <span class="badge bg-primary-subtle text-primary-emphasis">Bootstrap 5</span>
+              <span class="badge bg-primary-subtle text-primary-emphasis">Python</span>
+              <span class="badge bg-primary-subtle text-primary-emphasis">Java</span>
+              <span class="badge bg-primary-subtle text-primary-emphasis">Git/GitHub</span>
+            </div>
+
+            <h3 class="h6 text-uppercase text-muted mb-2">Soft skills</h3>
+            <div class="d-flex flex-wrap gap-2 mb-4" aria-label="Soft skills">
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Comunicação</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Organização</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Trabalho em equipe</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Resolução de problemas</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Aprendizado contínuo</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">Atenção a detalhes</span>
+            </div>
+
+            <h3 class="h6 text-uppercase text-muted mb-2">Links</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="https://github.com/lucasc140309-ops" class="btn btn-outline-dark btn-sm d-inline-flex align-items-center gap-2" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/lucas-castro-868577379" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="mailto:Lucasc140309@gmail.com" class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                E-mail
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ÁREAS DO CONHECIMENTO -->
+    <section id="areas" class="py-5 bg-light" aria-labelledby="titulo-areas">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 id="titulo-areas" class="fw-bold">Áreas do Conhecimento</h2>
+          <p class="text-muted mb-0">Como diferentes áreas contribuíram para minha lógica de programação</p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">🧠</div>
+                <h3 class="h5 card-title">Ciências Humanas</h3>
+                <p class="card-text text-muted mb-0">
+                  A leitura de contexto social, a interpretação de diferentes
+                  perspectivas e a empatia — competências centrais em Ciências
+                  Humanas — foram fundamentais para aprender a traduzir
+                  necessidades de usuários em requisitos técnicos. Entender que
+                  todo software serve a pessoas me ajuda a priorizar clareza,
+                  acessibilidade e comunicação nos projetos que desenvolvo.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">🔬</div>
+                <h3 class="h5 card-title">Ciências da Natureza</h3>
+                <p class="card-text text-muted mb-0">
+                  O método científico — observação, hipótese, experimento e
+                  conclusão — moldou minha forma de depurar código. Em vez de
+                  adivinhar a causa de um bug, formulo hipóteses, isolo
+                  variáveis e testo sistematicamente. Esse hábito, herdado das
+                  Ciências da Natureza, torna o processo de desenvolvimento mais
+                  previsível e menos frustrante.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">📐</div>
+                <h3 class="h5 card-title">Matemática</h3>
+                <p class="card-text text-muted mb-0">
+                  Raciocínio lógico, abstração e resolução de problemas são a
+                  base da Matemática e, por extensão, da programação. Estruturas
+                  de dados, algoritmos e funções são essencialmente modelos
+                  matemáticos aplicados. Estudar Matemática me ajudou a pensar
+                  em padrões, reutilização e complexidade — competências que uso
+                  diariamente em JavaScript.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">✍️</div>
+                <h3 class="h5 card-title">Linguagens</h3>
+                <p class="card-text text-muted mb-0">
+                  A interpretação textual e a comunicação escrita, competências
+                  centrais em Linguagens, são subestimadas na programação.
+                  Nomear variáveis, escrever comentários, documentar decisões e
+                  explicar código para outras pessoas exige clareza. A leitura
+                  frequente me ajuda a compreender documentações técnicas,
+                  mensagens de erro e especificações com mais precisão.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TENDÊNCIAS TECNOLÓGICAS -->
+    <section id="tendencias" class="py-5" aria-labelledby="titulo-tendencias">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 id="titulo-tendencias" class="fw-bold">Tendências Tecnológicas</h2>
+          <p class="text-muted mb-0">Panorama técnico de quatro frentes em ascensão</p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">🔒</div>
+                <h3 class="h5 card-title">Cibersegurança</h3>
+                <p class="card-text text-muted mb-0">
+                  Cibersegurança protege a tríade confidencialidade, integridade
+                  e disponibilidade (CIA) dos dados. No frontend, isso se traduz
+                  em sanitização de entradas, prevenção de XSS, uso de HTTPS,
+                  validação client-side sem confiar apenas nela e atenção a
+                  dependências de terceiros. Práticas como CSP, cookies
+                  <code>SameSite</code> e escape de HTML (aplicado nas mensagens
+                  deste projeto) reduzem a superfície de ataque.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">⛓️</div>
+                <h3 class="h5 card-title">Blockchain</h3>
+                <p class="card-text text-muted mb-0">
+                  Blockchain é um registro distribuído onde transações são
+                  agrupadas em blocos encadeados por hashes criptográficos. O
+                  consenso entre nós (PoW, PoS) garante imutabilidade sem
+                  autoridade central. Além de criptomoedas, permite contratos
+                  inteligentes (smart contracts) e aplicações em
+                  rastreabilidade, identidade e finanças descentralizadas. Para
+                  o frontend, o desafio é integrar carteiras e assinar
+                  transações com segurança.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">🤖</div>
+                <h3 class="h5 card-title">Automação / Robótica</h3>
+                <p class="card-text text-muted mb-0">
+                  Automação conecta sistemas via APIs e webhooks para eliminar
+                  tarefas repetitivas — como o próprio formulário deste
+                  portfólio, que dispara uma notificação real via webhook. Na
+                  robótica, sensores e atuadores se comunicam por protocolos
+                  industriais e, cada vez mais, expõem dados via HTTP/MQTT.
+                  Para o frontend, interfaces de monitoramento em tempo real e
+                  dashboards operacionais são a face visível dessa automação.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">📡</div>
+                <h3 class="h5 card-title">Edge Computing</h3>
+                <p class="card-text text-muted mb-0">
+                  Edge Computing processa dados próximos da origem — em vez de
+                  enviar tudo para um data center central. Isso reduz latência,
+                  economiza banda e viabiliza aplicações em IoT, cidades
+                  inteligentes e realidade aumentada. Para o frontend, o
+                  impacto é direto: sites e PWAs se beneficiam de CDNs com cache
+                  na borda, Service Workers e estratégias de carregamento
+                  progressivo que aproximam a experiência do usuário da fonte
+                  dos dados.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. GALERIA DE PROJETOS -->
+    <section id="projetos" class="py-5 bg-light" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 id="titulo-projetos" class="fw-bold">Projetos</h2>
+          <p class="text-muted mb-0">Seleção de trabalhos recentes</p>
+        </header>
+
+        <div class="row g-4">
+
+          <!-- PROJETO 1 -->
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm project-card">
+              <img
+                src="assets/img/imagem 1.png"
+                alt="Screenshot da landing page responsiva, com hero e seções empilhadas em mobile"
+                class="card-img-top project-image" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Teste de formatação com quebras</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Teste feito a partir de um modelo passado pelo professor
+                  com intuito de testar a formatação de quebras de linha, parágrafos e espaçamento.
+                </p>
+                <div class="d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 1">
+                  <span class="badge bg-light text-dark border">HTML5</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="https://github.com/lucasc140309-ops/Trabalhos-3Bi/tree/main/Quebras" class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener noreferrer">Repositório</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROJETO 2 -->
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm project-card">
+              <img
+                src="assets/img/imagem 2.png"
+                alt="Screenshot do dashboard de tarefas, com lista de itens e filtros por status"
+                class="card-img-top project-image" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Teste de input de dados </h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Teste feito a partir de um modelo passado pelo professor
+                  com intuito de aprender a utilizar formas de input de dados, como login e senha.
+                </p>
+                <div class="d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 2">
+                  <span class="badge bg-light text-dark border">HTML5</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="https://github.com/lucasc140309-ops/Trabalhos-3Bi/tree/main/login%20e%20senha" class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener noreferrer">Repositório</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROJETO 3 -->
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm project-card">
+              <img
+                src="assets/img/imagem 3.png"
+                alt="Screenshot do painel administrativo do portfólio, com lista de mensagens e botões de ação"
+                class="card-img-top project-image" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Galeria</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Primeiro teste de dirtecionamento de links para imagens e sites externos.
+                </p>
+                <div class="d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 3">
+                  <span class="badge bg-light text-dark border">HTML5</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="https://github.com/lucasc140309-ops/Trabalhos-3Bi/tree/main/galeria" class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener noreferrer">Repositório</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROJETO 4 -->
+          <div class="col-12 col-md-6">
+            <article class="card h-100 border-0 shadow-sm project-card">
+              <img
+                src="assets/img/imagem 4.png"
+                alt="Screenshot da galeria acessível, com grade de imagens e foco visível em um item"
+                class="card-img-top project-image" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Currículo</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Umas das primeiras experiencias com HTML criando um currículo online.
+                </p>
+                <div class="d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 4">
+                  <span class="badge bg-light text-dark border">HTML5</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="https://github.com/lucasc140309-ops/Trabalhos-3Bi/tree/main/curriculo" class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener noreferrer">Repositório</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTATO -->
+    <section id="contato" class="py-5" aria-labelledby="titulo-contato">
+      <div class="container">
+        <header class="text-center mb-4">
+          <h2 id="titulo-contato" class="fw-bold">Contato</h2>
+          <p class="text-muted mb-0">Envie uma mensagem — respondo assim que possível</p>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-6">
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="campoNome" class="form-label">Nome completo</label>
+                <input type="text" class="form-control" id="campoNome" name="nome"
+                       required minlength="2" maxlength="120" autocomplete="name">
+                <div class="invalid-feedback">Por favor, informe seu nome (mín. 2 caracteres).</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="campoEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="campoEmail" name="email"
+                       required maxlength="160" autocomplete="email">
+                <div class="invalid-feedback">Informe um e-mail válido.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="campoAssunto" class="form-label">Assunto</label>
+                <input type="text" class="form-control" id="campoAssunto" name="assunto"
+                       required minlength="3" maxlength="140">
+                <div class="invalid-feedback">Informe um assunto (mín. 3 caracteres).</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="campoMensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="campoMensagem" name="mensagem"
+                          rows="5" required minlength="10" maxlength="2000"></textarea>
+                <div class="invalid-feedback">Escreva uma mensagem com pelo menos 10 caracteres.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100" id="btnEnviar">
+                <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true" id="btnEnviarSpinner"></span>
+                <span>Enviar mensagem</span>
+              </button>
+
+              <div id="contactFeedback" class="mt-3" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <a href="https://github.com/lucasc140309-ops" class="text-white" aria-label="Perfil no GitHub" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-castro-868577379" class="text-white" aria-label="Perfil no LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:Lucasc140309@gmail.com" class="text-white" aria-label="Enviar e-mail">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+
+      <p class="mb-2 small">
+        © 2025 Lucas de Castro Mendonça. Feito com HTML, CSS, JavaScript e Bootstrap.
+      </p>
+      <p class="mb-0 small text-white-50">
+        Créditos: ícones SVG inline, imagens placeholders em SVG, dados armazenados localmente no navegador.
+      </p>
+
+      <button type="button" id="adminTrigger" class="admin-trigger mt-3"
+              aria-label="Área administrativa (acesso restrito)">
+        ⌘
+      </button>
+    </div>
+  </footer>
+
+  <!-- MODAL — SENHA DO PAINEL ADMINISTRATIVO -->
+  <div class="modal fade" id="adminPasswordModal" tabindex="-1" aria-labelledby="adminPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="adminPasswordModalLabel">Área administrativa</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <form id="adminLoginForm" novalidate>
+          <div class="modal-body">
+            <p class="small text-muted mb-3">
+              ⚠️ Senha <strong>client-side</strong>, apenas para demonstração. Não é segurança real.
+            </p>
+            <label for="adminPasswordInput" class="form-label">Senha de demonstração</label>
+            <input type="password" class="form-control" id="adminPasswordInput"
+                   autocomplete="current-password" required>
+            <div id="adminPasswordError" class="text-danger small mt-2 d-none" role="alert">
+              Senha incorreta. Tente novamente.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary" id="adminPasswordSubmit">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAINEL ADMINISTRATIVO (oculto) -->
+  <section id="adminPanel" class="py-5 bg-body-tertiary" aria-labelledby="titulo-admin" hidden>
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
+        <h2 id="titulo-admin" class="h4 mb-0">
+          Mensagens recebidas
+          <span class="badge bg-primary" id="adminCount">0</span>
+        </h2>
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary" id="adminExportBtn">Exportar JSON</button>
+          <button type="button" class="btn btn-sm btn-outline-danger" id="adminDeleteAllBtn">Excluir todas</button>
+          <button type="button" class="btn btn-sm btn-dark" id="adminExitBtn">Sair</button>
+        </div>
+      </div>
+
+      <div class="alert alert-warning small mb-4" role="note">
+        ⚠️ Área de demonstração. A senha é <strong>client-side</strong> e não oferece segurança real.
+        Serve apenas para separar o ambiente de testes do site público.
+      </div>
+
+      <div id="adminFeedback" role="alert" aria-live="polite"></div>
+      <div id="adminMessageList" class="row g-3" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- MODAL — EDIÇÃO DE MENSAGEM -->
+  <div class="modal fade" id="adminEditModal" tabindex="-1" aria-labelledby="adminEditModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="adminEditModalLabel">Editar mensagem</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="adminEditId">
+          <div class="mb-3">
+            <p class="small text-muted mb-1" id="adminEditMeta"></p>
+            <p class="mb-0 fw-semibold" id="adminEditAssunto"></p>
+          </div>
+          <div class="mb-3">
+            <p class="mb-1 small text-muted">Mensagem original</p>
+            <p class="border rounded p-2 bg-body-secondary small mb-0" id="adminEditMensagem"></p>
+          </div>
+          <div class="mb-3">
+            <label for="adminEditStatus" class="form-label">Status</label>
+            <select class="form-select" id="adminEditStatus">
+              <option value="novo">Novo</option>
+              <option value="em análise">Em análise</option>
+              <option value="respondido">Respondido</option>
+              <option value="arquivado">Arquivado</option>
+            </select>
+          </div>
+          <div class="mb-0">
+            <label for="adminEditObs" class="form-label">Observações internas</label>
+            <textarea class="form-control" id="adminEditObs" rows="3" maxlength="1000"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-outline-danger" id="adminEditDeleteBtn">Excluir</button>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="adminEditSaveBtn">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

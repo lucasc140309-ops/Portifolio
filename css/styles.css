@@ -1,0 +1,408 @@
+/* ============================================================
+   PORTFÓLIO — Canes Solution
+   Estilos customizados (CSS3 + refinamentos Bootstrap 5)
+   Estratégia: Mobile First (base = 360px)
+
+   Organização:
+   1. Variáveis
+   2. Reset e base
+   3. Acessibilidade (skip-link e foco)
+   4. Navbar e estrutura
+   5. Hero
+   6. Seções e cards
+   7. Galeria de projetos
+   8. Formulário de contato
+   9. Rodapé e gatilho admin
+   10. Painel administrativo
+   11. Breakpoints (768px e 1280px)
+   12. Preferências do usuário e impressão
+   13. Overflow-wrap (proteção mobile)
+   ============================================================ */
+
+/* 1. Variáveis */
+:root {
+  --cor-fundo: #f8fafc;
+  --cor-superficie: #ffffff;
+  --cor-texto: #0f172a;
+  --cor-texto-suave: #475569;
+  --cor-primaria: #0d6efd;
+  --cor-primaria-escura: #0a58ca;
+  --cor-acento: #22d3ee;
+  --cor-borda: #e2e8f0;
+  --sombra-suave: 0 0.25rem 0.75rem rgba(15, 23, 42, 0.06);
+  --sombra-media: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.08);
+  --raio: 0.75rem;
+  --navbar-altura: 56px;
+  --transicao: 200ms ease;
+}
+
+/* 2. Reset e base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--navbar-altura) + 1rem);
+}
+
+body {
+  padding-top: var(--navbar-altura);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--navbar-altura) + 1rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--cor-texto);
+}
+
+p {
+  color: var(--cor-texto-suave);
+}
+
+/* 3. Acessibilidade */
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 2000;
+  padding: 0.5rem 1rem;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border-radius: var(--raio);
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform var(--transicao);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 3px solid var(--cor-acento);
+  outline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible,
+.nav-link:focus-visible {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+/* 4. Navbar */
+.navbar {
+  background-color: var(--cor-superficie) !important;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.navbar-brand {
+  color: var(--cor-primaria) !important;
+  letter-spacing: -0.02em;
+}
+
+.navbar .nav-link {
+  color: var(--cor-texto);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--raio);
+  transition: background-color var(--transicao), color var(--transicao);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  background-color: rgba(13, 110, 253, 0.08);
+  color: var(--cor-primaria);
+}
+
+/* 5. Hero */
+.hero-section {
+  background: linear-gradient(180deg, #ffffff 0%, var(--cor-fundo) 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.hero-section h1 {
+  color: var(--cor-texto);
+}
+
+.hero-section .lead {
+  color: var(--cor-texto-suave);
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 6. Seções e cards */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+section header h2 {
+  color: var(--cor-texto);
+}
+
+.card {
+  border-radius: var(--raio) !important;
+  background-color: var(--cor-superficie);
+  transition: box-shadow var(--transicao), transform var(--transicao);
+}
+
+.card .fs-2 {
+  line-height: 1;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85em;
+}
+
+/* 7. Projetos */
+.project-card .project-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: var(--raio);
+  border-top-right-radius: var(--raio);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    box-shadow: var(--sombra-media) !important;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-media) !important;
+  }
+}
+
+/* 8. Formulário */
+#contactForm {
+  background-color: var(--cor-superficie);
+  padding: 1.5rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-suave);
+}
+
+#contactForm .form-label {
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+#contactForm .form-control {
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-borda);
+  padding: 0.65rem 0.85rem;
+  transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+
+#contactForm .form-control:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+#contactFeedback:empty,
+#adminFeedback:empty {
+  display: none;
+}
+
+/* 9. Rodapé e gatilho admin */
+footer {
+  background-color: #0f172a !important;
+  color: #f8fafc;
+}
+
+footer a {
+  opacity: 0.85;
+  display: inline-block;
+  transition: opacity var(--transicao), transform var(--transicao);
+}
+
+footer a:hover,
+footer a:focus-visible {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.admin-trigger {
+  background: transparent;
+  border: none;
+  color: rgba(248, 250, 252, 0.18);
+  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--raio);
+  cursor: pointer;
+  transition: color var(--transicao), background-color var(--transicao);
+}
+
+.admin-trigger:hover {
+  color: rgba(248, 250, 252, 0.65);
+  background-color: rgba(248, 250, 252, 0.05);
+}
+
+.admin-trigger:focus-visible {
+  color: rgba(248, 250, 252, 0.85);
+  outline: 3px solid var(--cor-acento);
+  outline-offset: 2px;
+}
+
+/* 10. Painel admin */
+#adminPanel {
+  background-color: #eef2f7 !important;
+  min-height: 60vh;
+  border-top: 2px dashed var(--cor-borda);
+}
+
+#adminMessageList .card {
+  border: 1px solid var(--cor-borda) !important;
+}
+
+#adminMessageList .card-title {
+  color: var(--cor-texto);
+}
+
+#adminMessageList .table-responsive {
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.status-badge.status-novo {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+.status-badge.status-em-analise {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.status-badge.status-respondido {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-badge.status-arquivado {
+  background-color: #e2e3e5;
+  color: #41464b;
+}
+
+/* 11. Breakpoints — Tablet */
+@media (min-width: 768px) {
+  :root { --navbar-altura: 64px; }
+
+  .hero-section { min-height: 70vh; }
+  .hero-photo { width: 180px; height: 180px; }
+  section { padding-top: 5rem; padding-bottom: 5rem; }
+  #contactForm { padding: 2rem; }
+}
+
+/* Breakpoints — Desktop */
+@media (min-width: 1280px) {
+  .hero-section { min-height: 80vh; }
+  .hero-section .lead { font-size: 1.2rem; }
+  section { padding-top: 6rem; padding-bottom: 6rem; }
+  #contactForm { padding: 2.5rem; }
+}
+
+/* 12. Preferências e impressão */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .project-card:hover { transform: none; }
+}
+
+@media print {
+  .navbar,
+  .admin-trigger,
+  #adminPanel,
+  .modal,
+  #contactForm button,
+  footer .d-flex {
+    display: none !important;
+  }
+
+  body {
+    padding-top: 0;
+    background: #fff;
+    color: #000;
+  }
+
+  section {
+    padding: 1rem 0;
+    page-break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+}
+
+/* 13. Proteção contra overflow (strings longas em 360px) */
+p,
+li,
+.card-text,
+.card-title,
+#adminEditMeta,
+#adminEditAssunto,
+#adminEditMensagem,
+#adminMessageList .card-title {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
