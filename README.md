@@ -1,7 +1,6 @@
 # Portfólio Web Dinâmico — Canes Solution
 
-Portfólio profissional **single-page**, responsivo e acessível, desenvolvido como
-entrega para o processo seletivo de Frontend da Canes Solution. Todo o conteúdo é
+Portfólio profissional **single-page**, responsivo e acessível. Todo o conteúdo é
 renderizado no cliente com HTML5, CSS3, JavaScript puro e Bootstrap 5 — **sem
 backend, sem banco de dados relacional e sem construtores de site**.
 
